@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --logo-font: advert mf;
+  --main-font: 'poppins'sans-serif;
+  --body-color: #eee;
+  --logo-color: #C24623;
+  --btn-color: #7D3214;
+}
+
+/* .dark-theme{
+  --title-color: #fff;
+  --body-color: #181621;
+  --blend-mode: lighten;
+} */
+
+.body {
+  font-family: 'poppins'sans-serif;
+  background-color: var(--body-color);
+}
+
+.header {
+  margin: 35px;
+}
+
+.navbar {
+  height: 5vh;
+  margin: 10px;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 35px;
+  color: var(--logo-color);
+  position: absolute;
+  left: 7.85%;
+  right: 85.07%;
+  top: 7.81%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--logo-color);
+}
+
+.logo-icon {
+  text-decoration: none;
+}
+
+.toggle-btn {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 7.83%;
+  right: 5rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  z-index: 9999;
+  border: 2px solid var(--body-color);
+}
+
+.toggle-btn i {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.top-container {
+  position: relative;
+  text-align: center;
+  height: 50vh;
+}
+
+.book-h2 {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 36px;
+  color: #35495E;
+}
+
+.book-text {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 40px;
+  color: #747474;
+}
+
+.book-h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  margin-top: 50px;
+  color: #35495E;
+}
+
+.form-input {
+  display: inline-block;
+  position: absolute;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: none;
+  width: 30%;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.09);
+  left: 28.8vw;
+}
+
+.btn-subscribe {
+  padding: 20px 50px;
+  border-radius: 6px;
+  background-color: var(--btn-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  display: inline-block;
+  position: absolute;
+  left: 59vw;
+}
+
+.form{
+  margin-top: 30px;
+}
+
+.card{
+  padding: 16px;
+  height: 400px;
+}
+
+.column {
+  float: left;
+  width: 16%;
+  height: 10px;
+  padding: 0 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-image{
+  flex: 1;
+}
+
+.card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
